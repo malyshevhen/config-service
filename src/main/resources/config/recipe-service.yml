@@ -3,6 +3,10 @@ server:
 
 spring:
   datasource:
-    url: ${DATASOURCE_URL:jdbc:postgresql://localhost:5432/recipe_db}
+    url: ${DATASOURCE_URL:jdbc:postgresql://localhost:5432/recipes_db}
     username: ${DATASOURCE_USERNAME:postgres}
     password: ${DATASOURCE_PASSWORD:password}
+
+    flyway:
+      enabled: true
+      baseline-on-migrate: true

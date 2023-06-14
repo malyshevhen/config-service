@@ -1,4 +1,4 @@
 FROM openjdk:17-alpine
-WORKDIR /
-COPY target/*.jar app.jar
+WORKDIR /app
+COPY target/*.jar /app/app.jar
 ENTRYPOINT [ "java", "-jar", "app.jar" ]

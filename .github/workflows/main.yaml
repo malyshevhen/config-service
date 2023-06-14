@@ -21,6 +21,9 @@ jobs:
           java-version: '17'
           cache: maven
 
+      - name: Unit tests
+        run: ./mvnw test
+
       - name: Build .jar
         run: ./mvnw clean package
 

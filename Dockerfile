@@ -1,4 +1,3 @@
 FROM openjdk:17-alpine
-WORKDIR /app
-COPY target/*.jar /app/app.jar
-ENTRYPOINT [ "java", "-jar", "app.jar" ]
+ADD target/config-service-*.jar /app/app.jar
+ENTRYPOINT ["java","-jar","/app/app.jar"]

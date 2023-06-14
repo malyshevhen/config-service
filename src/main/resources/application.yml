@@ -8,4 +8,4 @@ spring:
     config:
       server:
         native:
-          search-locations: file:///home/evhen/Documents/GitHub/config-service/src/main/resources/config
+          search-locations: file:///home/evhen/Documents/GitHub/meal-app/config-service/src/main/resources/config

@@ -2,10 +2,17 @@ server:
   port: 8888
 
 spring:
+  application:
+    name: config-server
   profiles:
-    active: native
+    active: jdbc
+  datasource:
+    url: "${CONFIG_DATASOURCE_URI:jdbc:mysql://localhost:3306/cloud}"
+    username: root
+    password: "${CONFIG_DATASOURCE_PASSWORD:password}"
   cloud:
     config:
       server:
-        native:
-          search-locations: file:///home/evhen/Documents/GitHub/meal-app/config-service/src/main/resources/config
+        jdbc:
+          sql: "SELECT PROP_KEY, VALUE from properties where APPLICATION=? and PROFILE=? and LABEL=?"
+          order: 1

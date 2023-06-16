@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8
+    ports:
+      - '3306:3306'
+    environment:
+      MYSQL_DATABASE: cloud
+      MYSQL_ROOT_PASSWORD: password
+    restart: always
+    volumes:
+      - config-data:/var/lib/mysql
+volumes:
+  config-data:

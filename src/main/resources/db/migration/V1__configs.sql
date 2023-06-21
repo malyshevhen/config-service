@@ -13,7 +13,7 @@ CREATE TABLE properties(
 -- product-service properties:
 INSERT INTO properties (APPLICATION, PROFILE, LABEL, PROP_KEY, VALUE) VALUES
 ('product-service', 'default', 'latest', 'server.port', '8082'),
-('product-service', 'default', 'latest', 'spring.datasource.url', 'jdbc:postgresql://localhost:5432/products_db'),
+('product-service', 'default', 'latest', 'spring.datasource.url', 'jdbc:postgresql://localhost:5433/products_db'),
 ('product-service', 'default', 'latest', 'spring.datasource.username', 'postgres'),
 ('product-service', 'default', 'latest', 'spring.datasource.password', 'password'),
 ('product-service', 'default', 'latest', 'spring.datasource.flyway.baseline-on-migrate', 'true'),

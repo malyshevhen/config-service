@@ -12,20 +12,20 @@ CREATE TABLE properties(
 
 -- product-service properties:
 INSERT INTO properties (APPLICATION, PROFILE, LABEL, PROP_KEY, VALUE) VALUES
-('product-service', 'default', 'latest', 'server.port', '8082'),
-('product-service', 'default', 'latest', 'spring.datasource.url', 'jdbc:postgresql://localhost:5433/products_db'),
-('product-service', 'default', 'latest', 'spring.datasource.username', 'postgres'),
-('product-service', 'default', 'latest', 'spring.datasource.password', 'password'),
-('product-service', 'default', 'latest', 'spring.datasource.flyway.baseline-on-migrate', 'true'),
-('product-service', 'default', 'latest', 'eureka.client.service-url.defaultZone', 'http://localhost:8761/eureka'),
-('product-service', 'default', 'latest', 'eureka.instance.prefer-ip-address', 'true');
+('products', 'default', 'latest', 'server.port', '8082'),
+('products', 'default', 'latest', 'spring.datasource.url', 'jdbc:postgresql://localhost:5433/products_db'),
+('products', 'default', 'latest', 'spring.datasource.username', 'postgres'),
+('products', 'default', 'latest', 'spring.datasource.password', 'password'),
+('products', 'default', 'latest', 'spring.datasource.flyway.baseline-on-migrate', 'true'),
+('products', 'default', 'latest', 'eureka.client.service-url.defaultZone', 'http://localhost:8761/eureka'),
+('products', 'default', 'latest', 'eureka.instance.prefer-ip-address', 'true');
 
 -- recipe-service properties:
 INSERT INTO properties (APPLICATION, PROFILE, LABEL, PROP_KEY, VALUE) VALUES
-('recipe-service', 'default', 'latest', 'server.port', '8081'),
-('recipe-service', 'default', 'latest', 'spring.datasource.username', ':postgres'),
-('recipe-service', 'default', 'latest', 'spring.datasource.url', 'jdbc:postgresql://localhost:5432/recipes_db'),
-('recipe-service', 'default', 'latest', 'spring.datasource.password', 'password'),
-('recipe-service', 'default', 'latest', 'spring.datasource.flyway.baseline-on-migrate', 'true'),
-('recipe-service', 'default', 'latest', 'eureka.client.service-url.defaultZone', 'http://localhost:8761/eureka}'),
-('recipe-service', 'default', 'latest', 'eureka.instance.prefer-ip-address', 'true');
+('recipes', 'default', 'latest', 'server.port', '8081'),
+('recipes', 'default', 'latest', 'spring.datasource.username', ':postgres'),
+('recipes', 'default', 'latest', 'spring.datasource.url', 'jdbc:postgresql://localhost:5432/recipes_db'),
+('recipes', 'default', 'latest', 'spring.datasource.password', 'password'),
+('recipes', 'default', 'latest', 'spring.datasource.flyway.baseline-on-migrate', 'true'),
+('recipes', 'default', 'latest', 'eureka.client.service-url.defaultZone', 'http://localhost:8761/eureka}'),
+('recipes', 'default', 'latest', 'eureka.instance.prefer-ip-address', 'true');
